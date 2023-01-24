@@ -1,0 +1,85 @@
+using System;
+using System.Xml;
+
+namespace lab1
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            string xmlFile = @"C:\Users\VIKTOR\Desktop\uni\ca2 coding\lab1\xmlFile.xml";
+
+            using (XmlTextWriter writer = new XmlTextWriter(xmlFile, null))
+            {
+                writer.Formatting = Formatting.Indented;
+                writer.Indentation = 3;
+
+                writer.WriteStartDocument(true);
+                writer.WriteStartElement("GoodsList");
+                //1
+                writer.WriteStartElement("goods");
+                writer.WriteAttributeString("ID", "1");
+                writer.WriteElementString("Title", "Coffee");
+                writer.WriteElementString("ExportCountry", "Spain");
+                writer.WriteElementString("Volume", "1000");
+                writer.WriteElementString("Price", "45");
+                writer.WriteEndElement();
+                //2
+                writer.WriteStartElement("goods");
+                writer.WriteAttributeString("ID", "2");
+                writer.WriteElementString("Title", "Pork");
+                writer.WriteElementString("ExportCountry", "USA");
+                writer.WriteElementString("Volume", "500");
+                writer.WriteElementString("Price", "150");
+                writer.WriteEndElement();
+                //3
+                writer.WriteStartElement("goods");
+                writer.WriteAttributeString("ID", "3");
+                writer.WriteElementString("Title", "Wheat");
+                writer.WriteElementString("ExportCountry", "Ukraine");
+                writer.WriteElementString("Volume", "8500");
+                writer.WriteElementString("Price", "8");
+                writer.WriteEndElement();
+                //4
+                writer.WriteStartElement("goods");
+                writer.WriteAttributeString("ID", "4");
+                writer.WriteElementString("Title", "Sugar");
+                writer.WriteElementString("ExportCountry", "Russia");
+                writer.WriteElementString("Volume", "5400");
+                writer.WriteElementString("Price", "23");
+                writer.WriteEndElement();
+                //5
+                writer.WriteStartElement("goods");
+                writer.WriteAttributeString("ID", "5");
+                writer.WriteElementString("Title", "Milk");
+                writer.WriteElementString("ExportCountry", "Poland");
+                writer.WriteElementString("Volume", "2300");
+                writer.WriteElementString("Price", "15");
+                writer.WriteEndElement();
+
+                writer.WriteEndElement();
+                Console.WriteLine("Created");
+            }
+            using (XmlTextReader reader = new XmlTextReader(xmlFile))
+            {
+                reader.ReadStartElement("GoodsList");
+                while (reader.Read())
+                {
+                    if (reader.NodeType == XmlNodeType.Element && reader.Name == "goods")
+                    {
+                        reader.ReadStartElement("goods");
+
+                        var id = reader.GetAttribute("ID");
+                        Console.WriteLine(id);
+                        Console.WriteLine("Title: " + reader.ReadElementString("Title"));
+                        Console.WriteLine("Export Country: " + reader.ReadElementString("ExportCountry"));
+                        Console.WriteLine("Volume: " + reader.ReadElementString("Volume"));
+                        Console.WriteLine("Price: " + reader.ReadElementString("Price"));
+                        Console.WriteLine("Done");
+                    }
+                }
+            }
+
+        }
+    }
+}

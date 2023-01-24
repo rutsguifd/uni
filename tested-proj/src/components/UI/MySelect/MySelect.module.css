@@ -1,0 +1,7 @@
+.select{
+    margin: 10px 0;
+    background-color: transparent;
+    border: 2px solid burlywood;
+    border-radius: 3px;
+    width: 100px;
+}

@@ -1,0 +1,13 @@
+.button {
+    margin: 10px;
+    height: 100%;
+    color: #e9d8a6;
+    background-color: transparent;
+    border: none;
+    &:hover {
+        margin: 10px;
+        transition: 0.2s;
+        background-color: #a8dadc;
+        color: #fff;
+    }
+}

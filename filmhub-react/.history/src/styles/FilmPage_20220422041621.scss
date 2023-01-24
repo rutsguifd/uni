@@ -1,0 +1,27 @@
+.filmPage {
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-around;
+}
+.filmInfo {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.addInfo {
+    display: flex;
+    margin: 50px;
+    flex-direction: column;
+    h1 {
+        align-items: center;
+        margin-bottom: 50px;
+        font-size: 36px;
+    }
+    p {
+        align-items: center;
+        margin-bottom: 50px;
+    }
+    .lastDiv {
+    margin-top: 5px;
+    }
+}

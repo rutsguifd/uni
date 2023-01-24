@@ -1,0 +1,14 @@
+.chat-container {
+  justify-content: center;
+  align-items: center;
+  border: 2px solid gray;
+  border-radius: 7px;
+  width: 80%;
+  .chat {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    height: 60vh;
+    overflow-y: auto;
+  }
+}

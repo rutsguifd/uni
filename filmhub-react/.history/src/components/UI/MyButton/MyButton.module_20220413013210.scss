@@ -1,0 +1,12 @@
+.button {
+    margin: 10px;
+    height: 1rem;
+    color: #e9d8a6;
+    background-color: transparent;
+    border: none;
+    &:hover {
+        transition: 0.2s;
+        background-color: #a8dadc;
+        color: #fff;
+    }
+}

@@ -1,0 +1,56 @@
+.header-box {
+    height: 3rem;
+    background-color: #222222;
+    background-size: cover;
+    background-position: bottom;
+    position: relative;
+    padding: 1rem;
+}
+
+.header-panel-box {
+    display: flex;
+    justify-content: space-between;
+}
+
+.router-link-button {
+    height: 100%;
+   
+    cursor: auto;
+    transform: translateY(+0.6rem);
+}
+
+.git img {
+    height: 2.5rem;
+   
+}
+
+.git {
+    transform: translateY(+0.6rem);
+}
+
+.git button {
+   
+    border-radius: 3px;
+    background-color: white;
+    cursor: pointer;
+   
+}
+
+.logo-box {
+    height: 4rem;
+    width: 4rem;
+    clip-path: polygon(50% 0%,
+            54% 38%,
+            79% 49%,
+            61% 61%,
+            80% 90%,
+            39% 69%,
+            20% 90%,
+            19% 67%,
+            6% 5%,
+            29% 48%);
+    background-color: white;
+   
+    flex-shrink: 0;
+}
+

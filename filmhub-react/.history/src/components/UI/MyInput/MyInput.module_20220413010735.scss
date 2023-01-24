@@ -1,0 +1,9 @@
+.input{
+    height: 1.5em;
+    border-radius: 4px;
+    border: none;
+    &:hover {
+        background-color: #a8dadc;
+        zoom: 1.1;
+    }
+}

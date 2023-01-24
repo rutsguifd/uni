@@ -1,0 +1,12 @@
+.input{
+    padding-left: 5px;
+    margin: 10px;
+    height: 40px;
+    width: 40vw;
+    border-radius: 4px;
+    border: none;
+    &:hover {
+        transition: 0.2s;
+        background-color: #ffffff;
+    }
+}

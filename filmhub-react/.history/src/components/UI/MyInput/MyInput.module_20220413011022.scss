@@ -1,0 +1,12 @@
+.input{
+    height: 1.5em;
+    border-radius: 4px;
+    border: none;
+    &:active{
+        border: none;
+    }
+    &:hover {
+        background-color: #a8dadc;
+        transform: scale(1.5, 1.25);
+    }
+}

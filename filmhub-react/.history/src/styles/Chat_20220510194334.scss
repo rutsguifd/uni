@@ -1,0 +1,22 @@
+.chat-container {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  .chat {
+    img {
+      height: 30px;
+    }
+    padding: 5px;
+    border-radius: 7px;
+    border: 2px solid gray;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    height: 60vh;
+    overflow-y: auto;
+  }
+}
+.input-button {
+    justify-content: center;
+}

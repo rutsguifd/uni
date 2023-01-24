@@ -1,0 +1,68 @@
+using System;
+using System.Xml;
+using System.Collections.Generic;
+using Newtonsoft.Json;
+
+namespace lab1
+{
+    class Program
+    {
+        class Goods
+        {
+            public string Title { get; set; }
+            public string ExportCountry { get; set; }
+            public string Volume { get; set; }
+            public string Price { get; set; }
+
+        }
+        static void Main(string[] args)
+        {
+            var Goods1 = new Goods
+            {
+                Title = "not coffee1",
+                ExportCountry = "1",
+                Volume = "2",
+                Price = "3"
+            };
+            var Goods2 = new Goods
+            {
+                Title = "not coffee2",
+                ExportCountry = "11",
+                Volume = "22",
+                Price = "33"
+            };
+            var Goods3 = new Goods
+            {
+                Title = "not coffee3",
+                ExportCountry = "111",
+                Volume = "222",
+                Price = "333"
+            }; 
+            var Goods4 = new Goods
+            {
+                Title = "not coffee4",
+                ExportCountry = "1111",
+                Volume = "2222",
+                Price = "3333"
+            };
+            var Goods5 = new Goods
+            {
+                Title = "not coffee5",
+                ExportCountry = "11111",
+                Volume = "22222",
+                Price = "33333"
+            };
+
+            List<Goods> goods = new List<Goods> 
+            {
+                Goods1,
+                Goods2,
+                Goods3,
+                Goods4,
+                Goods5
+            };
+            string json = JsonConvert.SerializeObject(goods);
+            Console.WriteLine(json);
+        }
+    }
+}

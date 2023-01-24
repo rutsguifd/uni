@@ -1,0 +1,12 @@
+.page {
+    background-color: transparent;
+    border: 1px solid #000;
+}
+.page__current {
+    background-color: blue;
+    border: 2px solid #313131;
+}
+.pag {
+    display: flex;
+    align-items: center;
+}

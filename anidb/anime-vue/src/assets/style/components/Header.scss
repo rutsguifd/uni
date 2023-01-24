@@ -1,0 +1,68 @@
+.header-box {
+    height: 55vh;
+    background-image: linear-gradient(to bottom, rgba(178, 178, 178, 0), #1c1c1c),
+        url(https://img1.akspic.ru/crops/8/4/9/7/6/167948/167948-anime-anime_art-ken_kaneki-tokio-oblako-3840x2160.jpg);
+    background-size: cover;
+    background-position: bottom;
+    position: relative;
+    padding: 2rem;
+}
+
+.header-panel-box {
+    display: flex;
+    justify-content: space-between;
+}
+
+.router-link-button {
+    height: 100%;
+
+    cursor: auto;
+}
+
+.logo-box {
+    height: 4rem;
+    width: 4rem;
+    clip-path: polygon(50% 0%,
+            54% 38%,
+            79% 49%,
+            61% 61%,
+            80% 90%,
+            39% 69%,
+            20% 90%,
+            19% 67%,
+            6% 5%,
+            29% 48%);
+    background-color: white;
+ 
+    flex-shrink: 0;
+}
+
+.header-title {
+    color: white;
+
+    transform: translateY(10vh);
+    letter-spacing: 1.5rem;
+    font-size: 3rem;
+}
+
+.header-title:hover {
+    cursor: default;
+}
+
+input[type="search"]::-webkit-search-cancel-button {
+    appearance: none;
+    width: 0px;
+    height: 0px;
+}
+
+
+.my-search-input {
+    background: none;
+   
+    border: none;
+    outline: none;
+    color: white;
+    border-bottom: 2px solid rgba(106, 72, 83, 0.691);
+    font-size: inherit;
+
+}
